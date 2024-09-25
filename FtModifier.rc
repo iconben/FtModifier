@@ -1,0 +1,249 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\FtModifier.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\FtModifier.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 FtModifier"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "FtModifier 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2002",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_FTMODIFIER_DIALOG DIALOGEX 0, 0, 362, 293
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "FtModifier"
+FONT 9, "宋体"
+BEGIN
+    PUSHBUTTON      "浏览...",IDC_BUTTONDIR,234,10,37,14,NOT WS_VISIBLE
+    PUSHBUTTON      "浏览...",IDC_BUTTONFILE,98,10,37,14
+    EDITTEXT        IDC_EDITFILE,20,29,325,14,ES_AUTOHSCROLL
+    CONTROL         "时间固定设置:",IDC_RADIOFIXED,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,54,145,68,12
+    CONTROL         "DateTimePicker5",IDC_DATEFIXED,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | DTS_UPDOWN | DTS_APPCANPARSE | 
+                    WS_TABSTOP,150,145,70,13
+    CONTROL         "DateTimePicker6",IDC_TIMEFIXED,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP | 0x8,245,145,
+                    60,13
+    CONTROL         "时间随机生成:",IDC_RADIORANDOM,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,54,161,72,15
+    CONTROL         "DateTimePicker1",IDC_DATEFROM,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | DTS_UPDOWN | WS_DISABLED | WS_TABSTOP,
+                    150,180,70,13
+    CONTROL         "DateTimePicker2",IDC_TIMEFROM,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | DTS_UPDOWN | WS_DISABLED | WS_TABSTOP | 
+                    0x8,245,180,60,13
+    CONTROL         "DateTimePicker3",IDC_DATETO,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | DTS_UPDOWN | WS_DISABLED | WS_TABSTOP,
+                    150,201,70,13
+    CONTROL         "DateTimePicker4",IDC_TIMETO,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | DTS_UPDOWN | WS_DISABLED | WS_TABSTOP | 
+                    0x8,245,201,60,13
+    DEFPUSHBUTTON   "保存(&S)",IDOK,253,225,50,14
+    PUSHBUTTON      "退出(&X)",IDCANCEL,295,267,50,14
+    LTEXT           "选择文件(可多选):",IDC_STATIC,20,14,77,8
+    GROUPBOX        "修改为",IDC_GROUP_TIME_EDITOR,35,131,290,117
+    LTEXT           "时间从:",IDC_TIMEFROM_PROMPT,90,183,35,10
+    LTEXT           "时间到:",IDC_TIMETO_PROMPT,90,203,33,10
+    GROUPBOX        "操作",IDC_GROUP_FILE_ACTION,20,66,325,189
+    LTEXT           "选择目录：",IDC_STATIC,188,14,44,9,NOT WS_VISIBLE
+    LTEXT           "",IDC_CREATION_TIME,46,111,91,10
+    LTEXT           "",IDC_LAST_WRITE_TIME,149,111,89,8
+    LTEXT           "",IDC_LAST_ACCESS_TIME,253,111,87,8
+    CONTROL         "创建时间",IDC_RADIO_CREATION,"Button",
+                    BS_AUTORADIOBUTTON,33,95,48,10
+    CONTROL         "修改时间",IDC_RADIO_LAST_WRITE,"Button",
+                    BS_AUTORADIOBUTTON,136,95,48,10
+    CONTROL         "访问时间",IDC_RADIO_LAST_ACCESS,"Button",
+                    BS_AUTORADIOBUTTON,239,95,48,10
+    RTEXT           "",IDC_TOTAL_FILE_NUMBER,193,49,151,8
+    LTEXT           "请选择要修改的时间:",IDC_ACTION_PROMPT,35,79,77,8
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "FtModifier Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "FtModifier\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2002\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "FtModifier.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "FtModifier 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_FTMODIFIER_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 355
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 286
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 FtModifier(&A)..."
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\FtModifier.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
