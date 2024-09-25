@@ -10,7 +10,7 @@ Please just click the FtModifier.exe to open the program, the UI is quite intuit
 The creation time cannot be saved to the edited value, it always turns to the time at which the file was saved.
 
 ## Tests
-The program was tested under Window XP, Window 7. It should run under Windows 10, Windows 11.
+The program was tested under Window XP, Windows 2003, Window 7, Windows 2008, and Windows 10. It should also work under Windows 11.
 
 ## Develop
 Developed under Visual V++ 6.0 with MFC support. Any pull requests are welcome.
